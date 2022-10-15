@@ -25,7 +25,9 @@ use RuntimeException;
 use Symfony\Component\VarDumper\VarDumper;
 
 class PendingRequest {
-    use Conditionable, Macroable;
+
+    use Conditionable;
+    use Macroable;
 
     /**
      * The factory instance.
@@ -196,7 +198,7 @@ class PendingRequest {
      */
     public function __construct( Factory $factory = null ) {
         $this->factory    = $factory;
-        $this->middleware = new Collection;
+        $this->middleware = new Collection();
 
         $this->asJson();
 
@@ -206,12 +208,15 @@ class PendingRequest {
             'timeout'         => 30,
         ];
 
-        $this->beforeSendingCallbacks = collect( [function ( Request $request, array $options, PendingRequest $pendingRequest ) {
-            $pendingRequest->request = $request;
-            $pendingRequest->cookies = $options['cookies'];
+        $this->beforeSendingCallbacks = collect( [
+            function ( Request $request, array $options, PendingRequest $pendingRequest ) {
+                $pendingRequest->request = $request;
+                $pendingRequest->cookies = $options['cookies'];
 
-            $pendingRequest->dispatchRequestSendingEvent();
-        } ] );
+                $pendingRequest->dispatchRequestSendingEvent();
+            },
+        ] );
+
     }
 
     /**
@@ -919,8 +924,8 @@ class PendingRequest {
      */
     public function buildClient() {
         return $this->requestsReusableClient()
-               ? $this->getReusableClient()
-               : $this->createClient( $this->buildHandlerStack() );
+            ? $this->getReusableClient()
+            : $this->createClient( $this->buildHandlerStack() );
     }
 
     /**
@@ -1026,10 +1031,10 @@ class PendingRequest {
         return function ( $handler ) {
             return function ( $request, $options ) use ( $handler ) {
                 $response = ( $this->stubCallbacks ?? collect() )
-                     ->map
-                     ->__invoke( ( new Request( $request ) )->withData( $options['laravel_data'] ), $options )
-                     ->filter()
-                     ->first();
+                    ->map
+                    ->__invoke( ( new Request( $request ) )->withData( $options['laravel_data'] ), $options )
+                    ->filter()
+                    ->first();
 
                 if ( is_null( $response ) ) {
                     if ( $this->preventStrayRequests ) {
