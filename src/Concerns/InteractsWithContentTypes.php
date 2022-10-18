@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http\Concerns;
 
-use Illuminate\Support\Str;
+use Hybrid\Tools\Str;
 
 trait InteractsWithContentTypes {
 

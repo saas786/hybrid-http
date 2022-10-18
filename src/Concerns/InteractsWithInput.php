@@ -272,7 +272,7 @@ trait InteractsWithInput {
      *
      * @param  string $key
      * @param  mixed  $default
-     * @return \Illuminate\Support\Stringable
+     * @return \Hybrid\Tools\Stringable
      */
     public function str( $key, $default = null ) {
         return $this->string( $key, $default );
@@ -283,7 +283,7 @@ trait InteractsWithInput {
      *
      * @param  string $key
      * @param  mixed  $default
-     * @return \Illuminate\Support\Stringable
+     * @return \Hybrid\Tools\Stringable
      */
     public function string( $key, $default = null ) {
         return str( $this->input( $key, $default ) );

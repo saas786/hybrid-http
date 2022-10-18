@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http;
 
-use Illuminate\Support\Str;
+use Hybrid\Tools\Str;
 
 trait FileHelpers {
 

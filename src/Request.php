@@ -7,7 +7,7 @@ use Closure;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Session\SymfonySessionDecorator;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
+use Hybrid\Tools\Str;
 use Illuminate\Support\Traits\Macroable;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;

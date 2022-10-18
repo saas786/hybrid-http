@@ -3,7 +3,7 @@
 namespace Illuminate\Http\Resources;
 
 use Illuminate\Support\Arr;
-use Illuminate\Support\Str;
+use Hybrid\Tools\Str;
 
 trait ConditionallyLoadsAttributes {
 

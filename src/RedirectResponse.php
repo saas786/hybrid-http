@@ -5,7 +5,7 @@ namespace Illuminate\Http;
 use Illuminate\Contracts\Support\MessageProvider;
 use Illuminate\Session\Store as SessionStore;
 use Illuminate\Support\MessageBag;
-use Illuminate\Support\Str;
+use Hybrid\Tools\Str;
 use Illuminate\Support\Traits\ForwardsCalls;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Support\ViewErrorBag;
