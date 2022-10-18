@@ -6,7 +6,7 @@ use ArrayAccess;
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Session\SymfonySessionDecorator;
-use Illuminate\Support\Arr;
+use Hybrid\Tools\Arr;
 use Hybrid\Tools\Str;
 use Illuminate\Support\Traits\Macroable;
 use Symfony\Component\HttpFoundation\ParameterBag;

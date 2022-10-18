@@ -5,7 +5,7 @@ namespace Illuminate\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
-use Illuminate\Support\Collection;
+use Hybrid\Tools\Collection;
 use Hybrid\Tools\Str;
 use ReflectionClass;
 use Traversable;

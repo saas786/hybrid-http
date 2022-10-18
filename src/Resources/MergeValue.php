@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http\Resources;
 
-use Illuminate\Support\Collection;
+use Hybrid\Tools\Collection;
 use JsonSerializable;
 
 class MergeValue {
@@ -17,7 +17,7 @@ class MergeValue {
     /**
      * Create a new merge value instance.
      *
-     * @param  \Illuminate\Support\Collection|\JsonSerializable|array $data
+     * @param  \Hybrid\Tools\Collection|\JsonSerializable|array $data
      * @return void
      */
     public function __construct( $data ) {

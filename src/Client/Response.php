@@ -3,7 +3,7 @@
 namespace Illuminate\Http\Client;
 
 use ArrayAccess;
-use Illuminate\Support\Collection;
+use Hybrid\Tools\Collection;
 use Illuminate\Support\Traits\Macroable;
 
 class Response implements ArrayAccess {
@@ -77,7 +77,7 @@ class Response implements ArrayAccess {
      * Get the JSON decoded body of the response as a collection.
      *
      * @param  string|null $key
-     * @return \Illuminate\Support\Collection
+     * @return \Hybrid\Tools\Collection
      */
     public function collect( $key = null ) {
         return Collection::make( $this->json( $key ) );

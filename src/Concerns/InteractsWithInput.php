@@ -3,7 +3,7 @@
 namespace Illuminate\Http\Concerns;
 
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Arr;
+use Hybrid\Tools\Arr;
 use Illuminate\Support\Facades\Date;
 use SplFileInfo;
 use stdClass;
@@ -344,7 +344,7 @@ trait InteractsWithInput {
      * Retrieve input from the request as a collection.
      *
      * @param  array|string|null $key
-     * @return \Illuminate\Support\Collection
+     * @return \Hybrid\Tools\Collection
      */
     public function collect( $key = null ) {
         return collect( is_array( $key ) ? $this->only( $key ) : $this->input( $key ) );

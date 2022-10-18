@@ -13,8 +13,8 @@ use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Http\Client\Events\ConnectionFailed;
 use Illuminate\Http\Client\Events\RequestSending;
 use Illuminate\Http\Client\Events\ResponseReceived;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
+use Hybrid\Tools\Arr;
+use Hybrid\Tools\Collection;
 use Hybrid\Tools\Str;
 use Illuminate\Support\Traits\Conditionable;
 use Illuminate\Support\Traits\Macroable;
@@ -130,14 +130,14 @@ class PendingRequest {
     /**
      * The callbacks that should execute before the request is sent.
      *
-     * @var \Illuminate\Support\Collection
+     * @var \Hybrid\Tools\Collection
      */
     protected $beforeSendingCallbacks;
 
     /**
      * The stub callables that will handle requests.
      *
-     * @var \Illuminate\Support\Collection|null
+     * @var \Hybrid\Tools\Collection|null
      */
     protected $stubCallbacks;
 
@@ -151,7 +151,7 @@ class PendingRequest {
     /**
      * The middleware callables added by users that will handle requests.
      *
-     * @var \Illuminate\Support\Collection
+     * @var \Hybrid\Tools\Collection
      */
     protected $middleware;
 

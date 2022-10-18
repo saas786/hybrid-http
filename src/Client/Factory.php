@@ -75,7 +75,7 @@ class Factory {
     /**
      * The stub callables that will handle requests.
      *
-     * @var \Illuminate\Support\Collection
+     * @var \Hybrid\Tools\Collection
      */
     protected $stubCallbacks;
 
@@ -354,7 +354,7 @@ class Factory {
      * Get a collection of the request / response pairs matching the given truth test.
      *
      * @param  callable $callback
-     * @return \Illuminate\Support\Collection
+     * @return \Hybrid\Tools\Collection
      */
     public function recorded( $callback = null ) {
         if ( empty( $this->recorded ) ) {

@@ -3,7 +3,7 @@
 namespace Illuminate\Http\Client;
 
 use ArrayAccess;
-use Illuminate\Support\Arr;
+use Hybrid\Tools\Arr;
 use Illuminate\Support\Traits\Macroable;
 
 class Request implements ArrayAccess {
