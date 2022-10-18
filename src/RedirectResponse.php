@@ -4,11 +4,11 @@ namespace Illuminate\Http;
 
 use Illuminate\Contracts\Support\MessageProvider;
 use Illuminate\Session\Store as SessionStore;
-use Illuminate\Support\MessageBag;
+use Hybrid\Tools\MessageBag;
 use Hybrid\Tools\Str;
-use Illuminate\Support\Traits\ForwardsCalls;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Support\ViewErrorBag;
+use Hybrid\Tools\Traits\ForwardsCalls;
+use Hybrid\Tools\Traits\Macroable;
+use Hybrid\Tools\ViewErrorBag;
 use Symfony\Component\HttpFoundation\File\UploadedFile as SymfonyUploadedFile;
 use Symfony\Component\HttpFoundation\RedirectResponse as BaseRedirectResponse;
 
@@ -142,7 +142,7 @@ class RedirectResponse extends BaseRedirectResponse {
      * Parse the given errors into an appropriate value.
      *
      * @param  \Illuminate\Contracts\Support\MessageProvider|array|string $provider
-     * @return \Illuminate\Support\MessageBag
+     * @return \Hybrid\Tools\MessageBag
      */
     protected function parseErrors( $provider ) {
         if ( $provider instanceof MessageProvider ) {

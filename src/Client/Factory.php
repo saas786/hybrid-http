@@ -9,7 +9,7 @@ use GuzzleHttp\Psr7\Response as Psr7Response;
 use GuzzleHttp\TransferStats;
 use Illuminate\Contracts\Events\Dispatcher;
 use Hybrid\Tools\Str;
-use Illuminate\Support\Traits\Macroable;
+use Hybrid\Tools\Traits\Macroable;
 use PHPUnit\Framework\Assert as PHPUnit;
 
 use function GuzzleHttp\Promise\promise_for;

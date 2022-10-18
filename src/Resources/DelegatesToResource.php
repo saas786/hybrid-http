@@ -2,8 +2,8 @@
 
 namespace Illuminate\Http\Resources;
 
-use Illuminate\Support\Traits\ForwardsCalls;
-use Illuminate\Support\Traits\Macroable;
+use Hybrid\Tools\Traits\ForwardsCalls;
+use Hybrid\Tools\Traits\Macroable;
 
 trait DelegatesToResource {
 

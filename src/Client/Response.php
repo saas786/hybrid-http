@@ -4,7 +4,7 @@ namespace Illuminate\Http\Client;
 
 use ArrayAccess;
 use Hybrid\Tools\Collection;
-use Illuminate\Support\Traits\Macroable;
+use Hybrid\Tools\Traits\Macroable;
 
 class Response implements ArrayAccess {
 

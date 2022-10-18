@@ -8,7 +8,7 @@ use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Session\SymfonySessionDecorator;
 use Hybrid\Tools\Arr;
 use Hybrid\Tools\Str;
-use Illuminate\Support\Traits\Macroable;
+use Hybrid\Tools\Traits\Macroable;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;

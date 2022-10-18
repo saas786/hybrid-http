@@ -6,7 +6,7 @@ use Illuminate\Container\Container;
 use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Http\Testing\FileFactory;
 use Hybrid\Tools\Arr;
-use Illuminate\Support\Traits\Macroable;
+use Hybrid\Tools\Traits\Macroable;
 use Symfony\Component\HttpFoundation\File\UploadedFile as SymfonyUploadedFile;
 
 class UploadedFile extends SymfonyUploadedFile {
