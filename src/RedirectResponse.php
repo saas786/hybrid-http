@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http;
 
-use Illuminate\Contracts\Support\MessageProvider;
+use Hybrid\Contracts\MessageProvider;
 use Illuminate\Session\Store as SessionStore;
 use Hybrid\Tools\MessageBag;
 use Hybrid\Tools\Str;
@@ -118,7 +118,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Flash a container of errors to the session.
      *
-     * @param  \Illuminate\Contracts\Support\MessageProvider|array|string $provider
+     * @param  \Hybrid\Contracts\MessageProvider|array|string $provider
      * @param  string                                                     $key
      * @return $this
      */
@@ -141,7 +141,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Parse the given errors into an appropriate value.
      *
-     * @param  \Illuminate\Contracts\Support\MessageProvider|array|string $provider
+     * @param  \Hybrid\Contracts\MessageProvider|array|string $provider
      * @return \Hybrid\Tools\MessageBag
      */
     protected function parseErrors( $provider ) {

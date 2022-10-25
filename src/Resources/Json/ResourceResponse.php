@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http\Resources\Json;
 
-use Illuminate\Contracts\Support\Responsable;
+use Hybrid\Contracts\Responsable;
 use Illuminate\Database\Eloquent\Model;
 use Hybrid\Tools\Collection;
 

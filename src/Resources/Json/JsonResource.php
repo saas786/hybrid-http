@@ -6,7 +6,7 @@ use ArrayAccess;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Routing\UrlRoutable;
 use Hybrid\Contracts\Arrayable;
-use Illuminate\Contracts\Support\Responsable;
+use Hybrid\Contracts\Responsable;
 use Illuminate\Http\Resources\ConditionallyLoadsAttributes;
 use Illuminate\Http\Resources\DelegatesToResource;
 use JsonSerializable;

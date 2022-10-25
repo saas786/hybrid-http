@@ -4,7 +4,7 @@ namespace Illuminate\Http\Middleware;
 
 use Closure;
 use Fruitcake\Cors\CorsService;
-use Illuminate\Contracts\Container\Container;
+use Hybrid\Contracts\Container\Container;
 use Illuminate\Http\Request;
 
 class HandleCors {
@@ -12,7 +12,7 @@ class HandleCors {
     /**
      * The container instance.
      *
-     * @var \Illuminate\Contracts\Container\Container
+     * @var \Hybrid\Contracts\Container\Container
      */
     protected $container;
 
@@ -26,7 +26,7 @@ class HandleCors {
     /**
      * Create a new middleware instance.
      *
-     * @param  \Illuminate\Contracts\Container\Container $container
+     * @param  \Hybrid\Contracts\Container\Container $container
      * @param  \Fruitcake\Cors\CorsService               $cors
      * @return void
      */
