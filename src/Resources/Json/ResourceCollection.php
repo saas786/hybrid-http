@@ -90,7 +90,7 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
      * Transform the resource into a JSON array.
      *
      * @param  \Illuminate\Http\Request $request
-     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     * @return array|\Hybrid\Contracts\Arrayable|\JsonSerializable
      */
     public function toArray( $request ) {
         return $this->collection->map->toArray( $request )->all();

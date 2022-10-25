@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http;
 
-use Illuminate\Contracts\Support\Arrayable;
+use Hybrid\Contracts\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Hybrid\Tools\Traits\Macroable;
 use JsonSerializable;

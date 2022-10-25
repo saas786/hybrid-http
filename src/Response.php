@@ -3,7 +3,7 @@
 namespace Illuminate\Http;
 
 use ArrayObject;
-use Illuminate\Contracts\Support\Arrayable;
+use Hybrid\Contracts\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Hybrid\Tools\Traits\Macroable;

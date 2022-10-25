@@ -5,7 +5,7 @@ namespace Illuminate\Http\Resources\Json;
 use ArrayAccess;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Routing\UrlRoutable;
-use Illuminate\Contracts\Support\Arrayable;
+use Hybrid\Contracts\Arrayable;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\Resources\ConditionallyLoadsAttributes;
 use Illuminate\Http\Resources\DelegatesToResource;
@@ -104,7 +104,7 @@ class JsonResource implements ArrayAccess, JsonSerializable, Responsable, UrlRou
      * Transform the resource into an array.
      *
      * @param  \Illuminate\Http\Request $request
-     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     * @return array|\Hybrid\Contracts\Arrayable|\JsonSerializable
      */
     public function toArray( $request ) {
         if ( is_null( $this->resource ) ) {

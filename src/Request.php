@@ -4,7 +4,7 @@ namespace Illuminate\Http;
 
 use ArrayAccess;
 use Closure;
-use Illuminate\Contracts\Support\Arrayable;
+use Hybrid\Contracts\Arrayable;
 use Illuminate\Session\SymfonySessionDecorator;
 use Hybrid\Tools\Arr;
 use Hybrid\Tools\Str;
