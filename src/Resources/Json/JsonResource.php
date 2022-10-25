@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources\Json;
+namespace Hybrid\Http\Resources\Json;
 
 use ArrayAccess;
 use Illuminate\Container\Container;

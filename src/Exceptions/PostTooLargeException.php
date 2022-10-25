@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Exceptions;
+namespace Hybrid\Http\Exceptions;
 
 class PostTooLargeException extends \Symfony\Component\HttpKernel\Exception\HttpException {
 

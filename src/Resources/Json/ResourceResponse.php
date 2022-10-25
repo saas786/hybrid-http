@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources\Json;
+namespace Hybrid\Http\Resources\Json;
 
 use Hybrid\Contracts\Responsable;
 use Illuminate\Database\Eloquent\Model;

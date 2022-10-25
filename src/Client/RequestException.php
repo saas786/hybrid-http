@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Client;
+namespace Hybrid\Http\Client;
 
 use GuzzleHttp\Psr7\Message;
 

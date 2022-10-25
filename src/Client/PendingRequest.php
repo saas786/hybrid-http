@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Client;
+namespace Hybrid\Http\Client;
 
 use Exception;
 use GuzzleHttp\Client;

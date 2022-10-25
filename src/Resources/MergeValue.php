@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources;
+namespace Hybrid\Http\Resources;
 
 use Hybrid\Tools\Collection;
 use JsonSerializable;

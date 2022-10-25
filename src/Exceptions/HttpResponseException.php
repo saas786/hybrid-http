@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Exceptions;
+namespace Hybrid\Http\Exceptions;
 
 use Symfony\Component\HttpFoundation\Response;
 

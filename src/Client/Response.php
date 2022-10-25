@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Client;
+namespace Hybrid\Http\Client;
 
 use ArrayAccess;
 use Hybrid\Tools\Collection;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http;
+namespace Hybrid\Http;
 
 use Hybrid\Tools\Str;
 

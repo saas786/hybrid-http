@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources;
+namespace Hybrid\Http\Resources;
 
 use Hybrid\Tools\Traits\ForwardsCalls;
 use Hybrid\Tools\Traits\Macroable;

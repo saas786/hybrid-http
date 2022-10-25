@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Testing;
+namespace Hybrid\Http\Testing;
 
 class FileFactory {
 

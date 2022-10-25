@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Testing;
+namespace Hybrid\Http\Testing;
 
 use Hybrid\Tools\Arr;
 use Symfony\Component\Mime\MimeTypes;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Client\Events;
+namespace Hybrid\Http\Client\Events;
 
 use Illuminate\Http\Client\Request;
 use Illuminate\Http\Client\Response;

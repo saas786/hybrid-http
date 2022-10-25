@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Concerns;
+namespace Hybrid\Http\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 

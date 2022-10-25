@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Exceptions;
+namespace Hybrid\Http\Exceptions;
 
 class ThrottleRequestsException extends \Symfony\Component\HttpKernel\Exception\TooManyRequestsHttpException {
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources;
+namespace Hybrid\Http\Resources;
 
 class MissingValue implements PotentiallyMissing {
 

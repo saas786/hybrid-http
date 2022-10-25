@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Middleware;
+namespace Hybrid\Http\Middleware;
 
 use Hybrid\Contracts\Foundation\Application;
 use Illuminate\Http\Request;

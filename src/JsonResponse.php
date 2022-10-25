@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http;
+namespace Hybrid\Http;
 
 use Hybrid\Contracts\Arrayable;
 use Hybrid\Contracts\Jsonable;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http;
+namespace Hybrid\Http;
 
 use Illuminate\Container\Container;
 use Hybrid\Contracts\Filesystem\Factory as FilesystemFactory;

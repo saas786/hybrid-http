@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Http\Resources;
+namespace Hybrid\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Pagination\AbstractCursorPaginator;
