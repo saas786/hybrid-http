@@ -512,7 +512,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess {
     /**
      * Get the session associated with the request.
      *
-     * @return \Illuminate\Contracts\Session\Session
+     * @return \Hybrid\Contracts\Session\Session
      * @throws \RuntimeException
      */
     public function session() {
@@ -526,7 +526,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess {
     /**
      * Set the session instance on the request.
      *
-     * @param  \Illuminate\Contracts\Session\Session $session
+     * @param  \Hybrid\Contracts\Session\Session $session
      * @return void
      */
     public function setLaravelSession( $session ) {

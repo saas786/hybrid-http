@@ -2,7 +2,7 @@
 
 namespace Illuminate\Http\Middleware;
 
-use Illuminate\Contracts\Foundation\Application;
+use Hybrid\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
 
 abstract class TrustHosts {
@@ -10,14 +10,14 @@ abstract class TrustHosts {
     /**
      * The application instance.
      *
-     * @var \Illuminate\Contracts\Foundation\Application
+     * @var \Hybrid\Contracts\Foundation\Application
      */
     protected $app;
 
     /**
      * Create a new middleware instance.
      *
-     * @param  \Illuminate\Contracts\Foundation\Application $app
+     * @param  \Hybrid\Contracts\Foundation\Application $app
      * @return void
      */
     public function __construct( Application $app ) {
