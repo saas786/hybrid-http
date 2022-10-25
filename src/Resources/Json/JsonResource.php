@@ -4,7 +4,7 @@ namespace Illuminate\Http\Resources\Json;
 
 use ArrayAccess;
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Routing\UrlRoutable;
+use Hybrid\Contracts\Routing\UrlRoutable;
 use Hybrid\Contracts\Arrayable;
 use Hybrid\Contracts\Responsable;
 use Illuminate\Http\Resources\ConditionallyLoadsAttributes;
