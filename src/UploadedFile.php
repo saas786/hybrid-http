@@ -3,7 +3,7 @@
 namespace Illuminate\Http;
 
 use Illuminate\Container\Container;
-use Illuminate\Contracts\Filesystem\Factory as FilesystemFactory;
+use Hybrid\Contracts\Filesystem\Factory as FilesystemFactory;
 use Illuminate\Http\Testing\FileFactory;
 use Hybrid\Tools\Arr;
 use Hybrid\Tools\Traits\Macroable;
