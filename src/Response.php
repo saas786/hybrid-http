@@ -4,8 +4,8 @@ namespace Illuminate\Http;
 
 use ArrayObject;
 use Hybrid\Contracts\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
-use Illuminate\Contracts\Support\Renderable;
+use Hybrid\Contracts\Jsonable;
+use Hybrid\Contracts\Renderable;
 use Hybrid\Tools\Traits\Macroable;
 use JsonSerializable;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;

@@ -3,7 +3,7 @@
 namespace Illuminate\Http;
 
 use Hybrid\Contracts\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
+use Hybrid\Contracts\Jsonable;
 use Hybrid\Tools\Traits\Macroable;
 use JsonSerializable;
 use Symfony\Component\HttpFoundation\JsonResponse as BaseJsonResponse;
