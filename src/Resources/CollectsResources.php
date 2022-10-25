@@ -2,7 +2,7 @@
 
 namespace Hybrid\Http\Resources;
 
-use Illuminate\Http\Resources\Json\JsonResource;
+use Hybrid\Http\Resources\Json\JsonResource;
 use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
 use Hybrid\Tools\Collection;

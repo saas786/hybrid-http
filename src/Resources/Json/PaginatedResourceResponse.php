@@ -9,8 +9,8 @@ class PaginatedResourceResponse extends ResourceResponse
     /**
      * Create an HTTP response that represents the object.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param  \Hybrid\Http\Request  $request
+     * @return \Hybrid\Http\JsonResponse
      */
     public function toResponse($request)
     {
@@ -38,7 +38,7 @@ class PaginatedResourceResponse extends ResourceResponse
     /**
      * Add the pagination information to the response.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Hybrid\Http\Request  $request
      * @return array
      */
     protected function paginationInformation($request)

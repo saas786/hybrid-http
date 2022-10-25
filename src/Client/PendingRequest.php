@@ -10,9 +10,9 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\TransferException;
 use GuzzleHttp\HandlerStack;
 use Hybrid\Contracts\Arrayable;
-use Illuminate\Http\Client\Events\ConnectionFailed;
-use Illuminate\Http\Client\Events\RequestSending;
-use Illuminate\Http\Client\Events\ResponseReceived;
+use Hybrid\Http\Client\Events\ConnectionFailed;
+use Hybrid\Http\Client\Events\RequestSending;
+use Hybrid\Http\Client\Events\ResponseReceived;
 use Hybrid\Tools\Arr;
 use Hybrid\Tools\Collection;
 use Hybrid\Tools\Str;
@@ -32,7 +32,7 @@ class PendingRequest {
     /**
      * The factory instance.
      *
-     * @var \Illuminate\Http\Client\Factory|null
+     * @var \Hybrid\Http\Client\Factory|null
      */
     protected $factory;
 
@@ -172,7 +172,7 @@ class PendingRequest {
     /**
      * The sent request object, if a request has been made.
      *
-     * @var \Illuminate\Http\Client\Request|null
+     * @var \Hybrid\Http\Client\Request|null
      */
     protected $request;
 
@@ -193,7 +193,7 @@ class PendingRequest {
     /**
      * Create a new HTTP Client instance.
      *
-     * @param  \Illuminate\Http\Client\Factory|null  $factory
+     * @param  \Hybrid\Http\Client\Factory|null  $factory
      * @return void
      */
     public function __construct( Factory $factory = null ) {
@@ -622,7 +622,7 @@ class PendingRequest {
      *
      * @param  string  $url
      * @param  array|string|null  $query
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function get( string $url, $query = null ) {
         return $this->send( 'GET', $url, func_num_args() === 1 ? [] : [
@@ -635,7 +635,7 @@ class PendingRequest {
      *
      * @param  string  $url
      * @param  array|string|null $query
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function head( string $url, $query = null ) {
         return $this->send( 'HEAD', $url, func_num_args() === 1 ? [] : [
@@ -648,7 +648,7 @@ class PendingRequest {
      *
      * @param  string $url
      * @param  array  $data
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function post( string $url, $data = [] ) {
         return $this->send( 'POST', $url, [
@@ -661,7 +661,7 @@ class PendingRequest {
      *
      * @param  string $url
      * @param  array  $data
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function patch( $url, $data = [] ) {
         return $this->send( 'PATCH', $url, [
@@ -674,7 +674,7 @@ class PendingRequest {
      *
      * @param  string $url
      * @param  array  $data
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function put( $url, $data = [] ) {
         return $this->send( 'PUT', $url, [
@@ -687,7 +687,7 @@ class PendingRequest {
      *
      * @param  string $url
      * @param  array  $data
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      */
     public function delete( $url, $data = [] ) {
         return $this->send( 'DELETE', $url, empty( $data ) ? [] : [
@@ -719,7 +719,7 @@ class PendingRequest {
      * @param  string $method
      * @param  string $url
      * @param  array  $options
-     * @return \Illuminate\Http\Client\Response
+     * @return \Hybrid\Http\Client\Response
      *
      * @throws \Exception
      */
@@ -906,8 +906,8 @@ class PendingRequest {
     /**
      * Populate the given response with additional data.
      *
-     * @param  \Illuminate\Http\Client\Response $response
-     * @return \Illuminate\Http\Client\Response
+     * @param  \Hybrid\Http\Client\Response $response
+     * @return \Hybrid\Http\Client\Response
      */
     protected function populateResponse( Response $response ) {
         $response->cookies = $this->cookies;
@@ -1173,7 +1173,7 @@ class PendingRequest {
     /**
      * Dispatch the ResponseReceived event if a dispatcher is available.
      *
-     * @param  \Illuminate\Http\Client\Response $response
+     * @param  \Hybrid\Http\Client\Response $response
      * @return void
      */
     protected function dispatchResponseReceivedEvent( Response $response ) {

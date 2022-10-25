@@ -256,11 +256,11 @@ class Response implements ArrayAccess {
     /**
      * Create an exception if a server or client error occurred.
      *
-     * @return \Illuminate\Http\Client\RequestException|null
+     * @return \Hybrid\Http\Client\RequestException|null
      */
     public function toException() {
         if ( $this->failed() ) {
-            return new \Illuminate\Http\Client\RequestException( $this );
+            return new \Hybrid\Http\Client\RequestException( $this );
         }
     }
 
@@ -269,7 +269,7 @@ class Response implements ArrayAccess {
      *
      * @param  \Closure|null $callback
      * @return $this
-     * @throws \Illuminate\Http\Client\RequestException
+     * @throws \Hybrid\Http\Client\RequestException
      */
     public function throw() {
         $callback = func_get_args()[0] ?? null;
@@ -290,7 +290,7 @@ class Response implements ArrayAccess {
      *
      * @param  bool $condition
      * @return $this
-     * @throws \Illuminate\Http\Client\RequestException
+     * @throws \Hybrid\Http\Client\RequestException
      */
     public function throwIf( $condition ) {
         return $condition ? $this->throw() : $this;

@@ -3,7 +3,7 @@
 namespace Hybrid\Http\Resources\Json;
 
 use Countable;
-use Illuminate\Http\Resources\CollectsResources;
+use Hybrid\Http\Resources\CollectsResources;
 use Illuminate\Pagination\AbstractCursorPaginator;
 use Illuminate\Pagination\AbstractPaginator;
 use IteratorAggregate;
@@ -89,7 +89,7 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
     /**
      * Transform the resource into a JSON array.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @return array|\Hybrid\Contracts\Arrayable|\JsonSerializable
      */
     public function toArray( $request ) {
@@ -99,8 +99,8 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
     /**
      * Create an HTTP response that represents the object.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param  \Hybrid\Http\Request $request
+     * @return \Hybrid\Http\JsonResponse
      */
     public function toResponse( $request ) {
         if ( $this->resource instanceof AbstractPaginator || $this->resource instanceof AbstractCursorPaginator ) {
@@ -113,8 +113,8 @@ class ResourceCollection extends JsonResource implements Countable, IteratorAggr
     /**
      * Create a paginate-aware HTTP response.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param  \Hybrid\Http\Request $request
+     * @return \Hybrid\Http\JsonResponse
      */
     protected function preparePaginatedResponse( $request ) {
         if ( $this->preserveAllQueryParameters ) {

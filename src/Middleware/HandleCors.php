@@ -5,7 +5,7 @@ namespace Hybrid\Http\Middleware;
 use Closure;
 use Fruitcake\Cors\CorsService;
 use Hybrid\Contracts\Container\Container;
-use Illuminate\Http\Request;
+use Hybrid\Http\Request;
 
 class HandleCors {
 
@@ -38,9 +38,9 @@ class HandleCors {
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @param  \Closure                 $next
-     * @return \Illuminate\Http\Response
+     * @return \Hybrid\Http\Response
      */
     public function handle( $request, Closure $next ) {
         if ( ! $this->hasMatchingPath( $request ) ) {
@@ -69,7 +69,7 @@ class HandleCors {
     /**
      * Get the path from the configuration to determine if the CORS service should run.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @return bool
      */
     protected function hasMatchingPath( Request $request ): bool {

@@ -6,19 +6,19 @@ use GuzzleHttp\Psr7\Message;
 
 use function GuzzleHttp\Psr7\get_message_body_summary;
 
-class RequestException extends \Illuminate\Http\Client\HttpClientException {
+class RequestException extends \Hybrid\Http\Client\HttpClientException {
 
     /**
      * The response instance.
      *
-     * @var \Illuminate\Http\Client\Response
+     * @var \Hybrid\Http\Client\Response
      */
     public $response;
 
     /**
      * Create a new exception instance.
      *
-     * @param  \Illuminate\Http\Client\Response $response
+     * @param  \Hybrid\Http\Client\Response $response
      * @return void
      */
     public function __construct( Response $response ) {
@@ -30,7 +30,7 @@ class RequestException extends \Illuminate\Http\Client\HttpClientException {
     /**
      * Prepare the exception message.
      *
-     * @param  \Illuminate\Http\Client\Response $response
+     * @param  \Hybrid\Http\Client\Response $response
      * @return string
      */
     protected function prepareMessage( Response $response ) {

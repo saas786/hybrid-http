@@ -28,8 +28,8 @@ class ResourceResponse implements Responsable {
     /**
      * Create an HTTP response that represents the object.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param  \Hybrid\Http\Request $request
+     * @return \Hybrid\Http\JsonResponse
      */
     public function toResponse( $request ) {
         return tap( response()->json(

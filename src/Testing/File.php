@@ -2,7 +2,7 @@
 
 namespace Hybrid\Http\Testing;
 
-use Illuminate\Http\UploadedFile;
+use Hybrid\Http\UploadedFile;
 
 class File extends UploadedFile {
 
@@ -56,7 +56,7 @@ class File extends UploadedFile {
      *
      * @param  string     $name
      * @param  string|int $kilobytes
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public static function create( $name, $kilobytes = 0 ) {
         return ( new FileFactory() )->create( $name, $kilobytes );
@@ -67,7 +67,7 @@ class File extends UploadedFile {
      *
      * @param  string $name
      * @param  string $content
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public static function createWithContent( $name, $content ) {
         return ( new FileFactory() )->createWithContent( $name, $content );
@@ -79,7 +79,7 @@ class File extends UploadedFile {
      * @param  string $name
      * @param  int    $width
      * @param  int    $height
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public static function image( $name, $width = 10, $height = 10 ) {
         return ( new FileFactory() )->image( $name, $width, $height );

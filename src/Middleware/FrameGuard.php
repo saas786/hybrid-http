@@ -9,7 +9,7 @@ class FrameGuard {
     /**
      * Handle the given request and get the response.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @param  \Closure                 $next
      * @return \Symfony\Component\HttpFoundation\Response
      */

@@ -21,7 +21,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * The request instance.
      *
-     * @var \Illuminate\Http\Request
+     * @var \Hybrid\Http\Request
      */
     protected $request;
 
@@ -182,7 +182,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Get the request instance.
      *
-     * @return \Illuminate\Http\Request|null
+     * @return \Hybrid\Http\Request|null
      */
     public function getRequest() {
         return $this->request;
@@ -191,7 +191,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Set the request instance.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @return void
      */
     public function setRequest( Request $request ) {

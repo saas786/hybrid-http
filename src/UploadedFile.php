@@ -4,7 +4,7 @@ namespace Hybrid\Http;
 
 use Illuminate\Container\Container;
 use Hybrid\Contracts\Filesystem\Factory as FilesystemFactory;
-use Illuminate\Http\Testing\FileFactory;
+use Hybrid\Http\Testing\FileFactory;
 use Hybrid\Tools\Arr;
 use Hybrid\Tools\Traits\Macroable;
 use Symfony\Component\HttpFoundation\File\UploadedFile as SymfonyUploadedFile;
@@ -17,7 +17,7 @@ class UploadedFile extends SymfonyUploadedFile {
     /**
      * Begin creating a new file fake.
      *
-     * @return \Illuminate\Http\Testing\FileFactory
+     * @return \Hybrid\Http\Testing\FileFactory
      */
     public static function fake() {
         return new FileFactory();

@@ -15,49 +15,49 @@ use PHPUnit\Framework\Assert as PHPUnit;
 use function GuzzleHttp\Promise\promise_for;
 
 /**
- * @see \Illuminate\Http\Client\PendingRequest
+ * @see \Hybrid\Http\Client\PendingRequest
  *
- * @method \Illuminate\Http\Client\PendingRequest accept(string $contentType)
- * @method \Illuminate\Http\Client\PendingRequest acceptJson()
- * @method \Illuminate\Http\Client\PendingRequest asForm()
- * @method \Illuminate\Http\Client\PendingRequest asJson()
- * @method \Illuminate\Http\Client\PendingRequest asMultipart()
- * @method \Illuminate\Http\Client\PendingRequest async()
- * @method \Illuminate\Http\Client\PendingRequest attach(string|array $name, string|resource $contents = '', string|null $filename = null, array $headers = [])
- * @method \Illuminate\Http\Client\PendingRequest baseUrl(string $url)
- * @method \Illuminate\Http\Client\PendingRequest beforeSending(callable $callback)
- * @method \Illuminate\Http\Client\PendingRequest bodyFormat(string $format)
- * @method \Illuminate\Http\Client\PendingRequest connectTimeout(int $seconds)
- * @method \Illuminate\Http\Client\PendingRequest contentType(string $contentType)
- * @method \Illuminate\Http\Client\PendingRequest dd()
- * @method \Illuminate\Http\Client\PendingRequest dump()
- * @method \Illuminate\Http\Client\PendingRequest maxRedirects(int $max)
- * @method \Illuminate\Http\Client\PendingRequest retry(int $times, int $sleepMilliseconds = 0, ?callable $when = null, bool $throw = true)
- * @method \Illuminate\Http\Client\PendingRequest sink(string|resource $to)
- * @method \Illuminate\Http\Client\PendingRequest stub(callable $callback)
- * @method \Illuminate\Http\Client\PendingRequest timeout(int $seconds)
- * @method \Illuminate\Http\Client\PendingRequest withBasicAuth(string $username, string $password)
- * @method \Illuminate\Http\Client\PendingRequest withBody(resource|string $content, string $contentType)
- * @method \Illuminate\Http\Client\PendingRequest withCookies(array $cookies, string $domain)
- * @method \Illuminate\Http\Client\PendingRequest withDigestAuth(string $username, string $password)
- * @method \Illuminate\Http\Client\PendingRequest withHeaders(array $headers)
- * @method \Illuminate\Http\Client\PendingRequest withMiddleware(callable $middleware)
- * @method \Illuminate\Http\Client\PendingRequest withOptions(array $options)
- * @method \Illuminate\Http\Client\PendingRequest withToken(string $token, string $type = 'Bearer')
- * @method \Illuminate\Http\Client\PendingRequest withUserAgent(string $userAgent)
- * @method \Illuminate\Http\Client\PendingRequest withoutRedirecting()
- * @method \Illuminate\Http\Client\PendingRequest withoutVerifying()
- * @method \Illuminate\Http\Client\PendingRequest throw(callable $callback = null)
- * @method \Illuminate\Http\Client\PendingRequest throwIf($condition)
- * @method \Illuminate\Http\Client\PendingRequest throwUnless($condition)
+ * @method \Hybrid\Http\Client\PendingRequest accept(string $contentType)
+ * @method \Hybrid\Http\Client\PendingRequest acceptJson()
+ * @method \Hybrid\Http\Client\PendingRequest asForm()
+ * @method \Hybrid\Http\Client\PendingRequest asJson()
+ * @method \Hybrid\Http\Client\PendingRequest asMultipart()
+ * @method \Hybrid\Http\Client\PendingRequest async()
+ * @method \Hybrid\Http\Client\PendingRequest attach(string|array $name, string|resource $contents = '', string|null $filename = null, array $headers = [])
+ * @method \Hybrid\Http\Client\PendingRequest baseUrl(string $url)
+ * @method \Hybrid\Http\Client\PendingRequest beforeSending(callable $callback)
+ * @method \Hybrid\Http\Client\PendingRequest bodyFormat(string $format)
+ * @method \Hybrid\Http\Client\PendingRequest connectTimeout(int $seconds)
+ * @method \Hybrid\Http\Client\PendingRequest contentType(string $contentType)
+ * @method \Hybrid\Http\Client\PendingRequest dd()
+ * @method \Hybrid\Http\Client\PendingRequest dump()
+ * @method \Hybrid\Http\Client\PendingRequest maxRedirects(int $max)
+ * @method \Hybrid\Http\Client\PendingRequest retry(int $times, int $sleepMilliseconds = 0, ?callable $when = null, bool $throw = true)
+ * @method \Hybrid\Http\Client\PendingRequest sink(string|resource $to)
+ * @method \Hybrid\Http\Client\PendingRequest stub(callable $callback)
+ * @method \Hybrid\Http\Client\PendingRequest timeout(int $seconds)
+ * @method \Hybrid\Http\Client\PendingRequest withBasicAuth(string $username, string $password)
+ * @method \Hybrid\Http\Client\PendingRequest withBody(resource|string $content, string $contentType)
+ * @method \Hybrid\Http\Client\PendingRequest withCookies(array $cookies, string $domain)
+ * @method \Hybrid\Http\Client\PendingRequest withDigestAuth(string $username, string $password)
+ * @method \Hybrid\Http\Client\PendingRequest withHeaders(array $headers)
+ * @method \Hybrid\Http\Client\PendingRequest withMiddleware(callable $middleware)
+ * @method \Hybrid\Http\Client\PendingRequest withOptions(array $options)
+ * @method \Hybrid\Http\Client\PendingRequest withToken(string $token, string $type = 'Bearer')
+ * @method \Hybrid\Http\Client\PendingRequest withUserAgent(string $userAgent)
+ * @method \Hybrid\Http\Client\PendingRequest withoutRedirecting()
+ * @method \Hybrid\Http\Client\PendingRequest withoutVerifying()
+ * @method \Hybrid\Http\Client\PendingRequest throw(callable $callback = null)
+ * @method \Hybrid\Http\Client\PendingRequest throwIf($condition)
+ * @method \Hybrid\Http\Client\PendingRequest throwUnless($condition)
  * @method array pool(callable $callback)
- * @method \Illuminate\Http\Client\Response delete(string $url, array $data = [])
- * @method \Illuminate\Http\Client\Response get(string $url, array|string|null $query = null)
- * @method \Illuminate\Http\Client\Response head(string $url, array|string|null $query = null)
- * @method \Illuminate\Http\Client\Response patch(string $url, array $data = [])
- * @method \Illuminate\Http\Client\Response post(string $url, array $data = [])
- * @method \Illuminate\Http\Client\Response put(string $url, array $data = [])
- * @method \Illuminate\Http\Client\Response send(string $method, string $url, array $options = [])
+ * @method \Hybrid\Http\Client\Response delete(string $url, array $data = [])
+ * @method \Hybrid\Http\Client\Response get(string $url, array|string|null $query = null)
+ * @method \Hybrid\Http\Client\Response head(string $url, array|string|null $query = null)
+ * @method \Hybrid\Http\Client\Response patch(string $url, array $data = [])
+ * @method \Hybrid\Http\Client\Response post(string $url, array $data = [])
+ * @method \Hybrid\Http\Client\Response put(string $url, array $data = [])
+ * @method \Hybrid\Http\Client\Response send(string $method, string $url, array $options = [])
  */
 class Factory {
 
@@ -145,7 +145,7 @@ class Factory {
      * Get an invokable object that returns a sequence of responses in order for use during stubbing.
      *
      * @param  array $responses
-     * @return \Illuminate\Http\Client\ResponseSequence
+     * @return \Hybrid\Http\Client\ResponseSequence
      */
     public function sequence( array $responses = [] ) {
         return $this->responseSequences[] = new ResponseSequence( $responses );
@@ -198,7 +198,7 @@ class Factory {
      * Register a response sequence for the given URL pattern.
      *
      * @param  string $url
-     * @return \Illuminate\Http\Client\ResponseSequence
+     * @return \Hybrid\Http\Client\ResponseSequence
      */
     public function fakeSequence( $url = '*' ) {
         return tap($this->sequence(), function ( $sequence ) use ( $url ) {
@@ -210,7 +210,7 @@ class Factory {
      * Stub the given URL using the given callback.
      *
      * @param  string                                                                         $url
-     * @param  \Illuminate\Http\Client\Response|\GuzzleHttp\Promise\PromiseInterface|callable $callback
+     * @param  \Hybrid\Http\Client\Response|\GuzzleHttp\Promise\PromiseInterface|callable $callback
      * @return $this
      */
     public function stubUrl( $url, $callback ) {
@@ -260,8 +260,8 @@ class Factory {
     /**
      * Record a request response pair.
      *
-     * @param  \Illuminate\Http\Client\Request  $request
-     * @param  \Illuminate\Http\Client\Response $response
+     * @param  \Hybrid\Http\Client\Request  $request
+     * @param  \Hybrid\Http\Client\Response $response
      * @return void
      */
     public function recordRequestResponsePair( $request, $response ) {
@@ -369,7 +369,7 @@ class Factory {
     /**
      * Create a new pending request instance for this factory.
      *
-     * @return \Illuminate\Http\Client\PendingRequest
+     * @return \Hybrid\Http\Client\PendingRequest
      */
     protected function newPendingRequest() {
         return new PendingRequest( $this );

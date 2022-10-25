@@ -3,7 +3,7 @@
 namespace Hybrid\Http\Middleware;
 
 use Hybrid\Contracts\Foundation\Application;
-use Illuminate\Http\Request;
+use Hybrid\Http\Request;
 
 abstract class TrustHosts {
 
@@ -34,9 +34,9 @@ abstract class TrustHosts {
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  \Hybrid\Http\Request $request
      * @param  \Closure                 $next
-     * @return \Illuminate\Http\Response
+     * @return \Hybrid\Http\Response
      */
     public function handle( Request $request, $next ) {
         if ( $this->shouldSpecifyTrustedHosts() ) {

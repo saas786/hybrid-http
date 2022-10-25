@@ -159,10 +159,10 @@ trait ResponseTrait {
      * Throws the response in a HttpResponseException instance.
      *
      * @return void
-     * @throws \Illuminate\Http\Exceptions\HttpResponseException
+     * @throws \Hybrid\Http\Exceptions\HttpResponseException
      */
     public function throwResponse() {
-        throw new \Illuminate\Http\Exceptions\HttpResponseException( $this );
+        throw new \Hybrid\Http\Exceptions\HttpResponseException( $this );
     }
 
 }

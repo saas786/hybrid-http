@@ -2,7 +2,7 @@
 
 namespace Hybrid\Http\Concerns;
 
-use Illuminate\Http\UploadedFile;
+use Hybrid\Http\UploadedFile;
 use Hybrid\Tools\Arr;
 use Illuminate\Support\Facades\Date;
 use SplFileInfo;
@@ -497,7 +497,7 @@ trait InteractsWithInput {
      *
      * @param  string|null $key
      * @param  mixed       $default
-     * @return \Illuminate\Http\UploadedFile|\Illuminate\Http\UploadedFile[]|array|null
+     * @return \Hybrid\Http\UploadedFile|\Hybrid\Http\UploadedFile[]|array|null
      */
     public function file( $key = null, $default = null ) {
         return data_get( $this->allFiles(), $key, $default );

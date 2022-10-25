@@ -2,6 +2,6 @@
 
 namespace Hybrid\Http\Client;
 
-class ConnectionException extends \Illuminate\Http\Client\HttpClientException {
+class ConnectionException extends \Hybrid\Http\Client\HttpClientException {
 
 }

@@ -7,14 +7,14 @@ use GuzzleHttp\Utils;
 use function GuzzleHttp\choose_handler;
 
 /**
- * @mixin \Illuminate\Http\Client\Factory
+ * @mixin \Hybrid\Http\Client\Factory
  */
 class Pool {
 
     /**
      * The factory instance.
      *
-     * @var \Illuminate\Http\Client\Factory
+     * @var \Hybrid\Http\Client\Factory
      */
     protected $factory;
 
@@ -35,7 +35,7 @@ class Pool {
     /**
      * Create a new requests pool.
      *
-     * @param  \Illuminate\Http\Client\Factory|null $factory
+     * @param  \Hybrid\Http\Client\Factory|null $factory
      * @return void
      */
     public function __construct( Factory $factory = null ) {
@@ -48,7 +48,7 @@ class Pool {
      * Add a request to the pool with a key.
      *
      * @param  string $key
-     * @return \Illuminate\Http\Client\PendingRequest
+     * @return \Hybrid\Http\Client\PendingRequest
      */
     public function as( string $key ) {
         return $this->pool[ $key ] = $this->asyncRequest();
@@ -57,7 +57,7 @@ class Pool {
     /**
      * Retrieve a new async pending request.
      *
-     * @return \Illuminate\Http\Client\PendingRequest
+     * @return \Hybrid\Http\Client\PendingRequest
      */
     protected function asyncRequest() {
         return $this->factory->setHandler( $this->handler )->async();
@@ -77,7 +77,7 @@ class Pool {
      *
      * @param  string $method
      * @param  array  $parameters
-     * @return \Illuminate\Http\Client\PendingRequest
+     * @return \Hybrid\Http\Client\PendingRequest
      */
     public function __call( $method, $parameters ) {
         return $this->pool[] = $this->asyncRequest()->$method( ...$parameters );

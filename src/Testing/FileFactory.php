@@ -10,7 +10,7 @@ class FileFactory {
      * @param  string      $name
      * @param  string|int  $kilobytes
      * @param  string|null $mimeType
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public function create( $name, $kilobytes = 0, $mimeType = null ) {
         if ( is_string( $kilobytes ) ) {
@@ -28,7 +28,7 @@ class FileFactory {
      *
      * @param  string $name
      * @param  string $content
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public function createWithContent( $name, $content ) {
         $tmpfile = tmpfile();
@@ -46,7 +46,7 @@ class FileFactory {
      * @param  string $name
      * @param  int    $width
      * @param  int    $height
-     * @return \Illuminate\Http\Testing\File
+     * @return \Hybrid\Http\Testing\File
      */
     public function image( $name, $width = 10, $height = 10 ) {
         return new File($name, $this->generateImage(

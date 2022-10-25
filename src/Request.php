@@ -392,8 +392,8 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess {
     /**
      * Create a new request instance from the given Laravel request.
      *
-     * @param  \Illuminate\Http\Request      $from
-     * @param  \Illuminate\Http\Request|null $to
+     * @param  \Hybrid\Http\Request      $from
+     * @param  \Hybrid\Http\Request|null $to
      * @return static
      */
     public static function createFrom( self $from, $to = null ) {
