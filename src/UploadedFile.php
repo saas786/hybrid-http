@@ -87,11 +87,11 @@ class UploadedFile extends SymfonyUploadedFile {
      * Get the contents of the uploaded file.
      *
      * @return false|string
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws \Hybrid\Contracts\Filesystem\FileNotFoundException
      */
     public function get() {
         if ( ! $this->isValid() ) {
-            throw new \Illuminate\Contracts\Filesystem\FileNotFoundException( "File does not exist at path {$this->getPathname()}." );
+            throw new \Hybrid\Contracts\Filesystem\FileNotFoundException( "File does not exist at path {$this->getPathname()}." );
         }
 
         return file_get_contents( $this->getPathname() );
