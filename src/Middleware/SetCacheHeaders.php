@@ -3,7 +3,7 @@
 namespace Hybrid\Http\Middleware;
 
 use Closure;
-use Illuminate\Support\Carbon;
+use Hybrid\Tools\Carbon;
 
 class SetCacheHeaders {
 

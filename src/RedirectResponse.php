@@ -3,7 +3,7 @@
 namespace Hybrid\Http;
 
 use Hybrid\Contracts\MessageProvider;
-use Illuminate\Session\Store as SessionStore;
+use Hybrid\Session\Store as SessionStore;
 use Hybrid\Tools\MessageBag;
 use Hybrid\Tools\Str;
 use Hybrid\Tools\Traits\ForwardsCalls;
@@ -28,7 +28,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * The session store instance.
      *
-     * @var \Illuminate\Session\Store
+     * @var \Hybrid\Session\Store
      */
     protected $session;
 
@@ -201,7 +201,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Get the session store instance.
      *
-     * @return \Illuminate\Session\Store|null
+     * @return \Hybrid\Session\Store|null
      */
     public function getSession() {
         return $this->session;
@@ -210,7 +210,7 @@ class RedirectResponse extends BaseRedirectResponse {
     /**
      * Set the session store instance.
      *
-     * @param  \Illuminate\Session\Store $session
+     * @param  \Hybrid\Session\Store $session
      * @return void
      */
     public function setSession( SessionStore $session ) {

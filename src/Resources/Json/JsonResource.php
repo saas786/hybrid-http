@@ -3,7 +3,7 @@
 namespace Hybrid\Http\Resources\Json;
 
 use ArrayAccess;
-use Illuminate\Container\Container;
+use Hybrid\Container\Container;
 use Hybrid\Contracts\Routing\UrlRoutable;
 use Hybrid\Contracts\Arrayable;
 use Hybrid\Contracts\Responsable;

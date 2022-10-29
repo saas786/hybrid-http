@@ -2,7 +2,7 @@
 
 namespace Hybrid\Http;
 
-use Illuminate\Container\Container;
+use Hybrid\Container\Container;
 use Hybrid\Contracts\Filesystem\Factory as FilesystemFactory;
 use Hybrid\Http\Testing\FileFactory;
 use Hybrid\Tools\Arr;

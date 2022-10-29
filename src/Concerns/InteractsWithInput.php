@@ -4,7 +4,7 @@ namespace Hybrid\Http\Concerns;
 
 use Hybrid\Http\UploadedFile;
 use Hybrid\Tools\Arr;
-use Illuminate\Support\Facades\Date;
+use Hybrid\Tools\Facades\Date;
 use SplFileInfo;
 use stdClass;
 use Symfony\Component\HttpFoundation\InputBag;
@@ -308,7 +308,7 @@ trait InteractsWithInput {
      * @param  string      $key
      * @param  string|null $format
      * @param  string|null $tz
-     * @return \Illuminate\Support\Carbon|null
+     * @return \Hybrid\Tools\Carbon|null
      */
     public function date( $key, $format = null, $tz = null ) {
         if ( $this->isNotFilled( $key ) ) {
